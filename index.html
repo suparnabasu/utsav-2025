@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Utsav 2025 – Brochure (with logo slot)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+@page {
+  size: A4;
+  margin: 16mm;
+}
+:root {
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --accent: #b30059; /* deep rose */
+  --accent2: #ffcc00; /* festive gold */
+  --muted: #666666;
+  --chip: #f6f4f8;
+}
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+  line-height: 1.35;
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+}
+.title {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+.subtitle {
+  font-size: 16px;
+  color: var(--muted);
+}
+.badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+.badge {
+  background: var(--chip);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+.qr {
+  text-align: right;
+}
+.qr img {
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin-left: auto;
+  border: 4px solid var(--chip);
+  border-radius: 12px;
+}
+.qr small {
+  color: var(--muted);
+  display: block;
+  margin-top: 6px;
+}
+.section {
+  margin-top: 16px;
+}
+.section h2 {
+  font-size: 18px;
+  border-left: 6px solid var(--accent);
+  padding-left: 10px;
+  margin: 12px 0;
+}
+.section h3 {
+  font-size: 15px;
+  color: var(--accent);
+  margin: 10px 0 6px;
+}
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 16px;
+}
+.item {
+  padding: 10px 12px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fff, #fff 60%, #faf9fb);
+}
+.item .t {
+  font-weight: 700;
+}
+.item .meta {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.item .type {
+  font-size: 12px;
+  margin-top: 6px;
+  background: #fff4f9;
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid #ffd6ea;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.callout {
+  padding: 10px 12px;
+  border-left: 4px solid var(--accent2);
+  background: #fffaf0;
+  border-radius: 8px;
+  font-size: 13px;
+}
+.footer {
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 1px dashed #ddd;
+  font-size: 12px;
+  color: var(--muted);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.sponsor {
+  background: #f1f5ff;
+  border: 1px solid #e3ecff;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+.note { font-size: 12px; color: var(--muted); }
+hr.split {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, #eee, #ddd, #eee);
+  margin: 18px 0;
+}
+
+
+.brand {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 12px;
+  align-items: center;
+}
+.brand img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: #fff;
+}
+
+</style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <div class="brand">
+        <img src="logo.png" alt="Mayur Dance Academy logo (replace this file to brand)" />
+        <div>
+          <div class="title">Mayur Dance Academy Annual Production 2025</div>
+          <div class="subtitle">Utsav – Indian Celebration</div>
+          <div class="badges">
+            <span class="badge">Saturday, 30 August 2025</span>
+            <span class="badge">5:30 pm</span>
+            <span class="badge">Lower Hutt Little Theatre</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="qr">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASgAAAEoAQAAAADDfFG0AAAB6klEQVR4nO2aUW/DMAiE76b8/7/87QGw3WaT9rKYaaaq0tQn5YQwHDhGP7CPn4AO6qDuRgUYAoSEBGJZoSv751GXJCTJQg5vCUtmrrRlvwllO+6s6Sl7rrRmvwtlI2FhS4avUc/z6ovKKBs78fef+OdQlzScgyUha7qMXby6ol7q4+1TkK7sn0eZ9acjuoTMstKW/Z74St0lkCA1xdiknPhaDSJPLRmL8lquHX9Nu+JiTAgKadmVyiLQlf0eVEaYkSyDLASWJY6+fzWiUUSjIFK5LO5OfVzNjG+o1SiSuPK92cKrKyr7bVN7bzgu5D6Yvuy36S9HXpdK4GvN+W3Zb0FZFhlfUrVDthAxsejMfgPKOIc4oOEwRQU4+esdxXTY0miT07Cjv+4ojHDNvXIbzhBrzv5R1Gh9VIP7kmQMNXb01zSTtZG8aGb8LJJHT7yiGO4i3DTq4tAYjdk/jPKU8alZXQKWKcC6st+jv+JUSHJOwOIvFtnamP3DqPf5quekosJsC6+uqNv8fpxs5wSfMy9cbT3fdo6/5jn36R/f7ZLG3lOkK1ZdYTBt2W/yVxiKY+1wkWtCceY536HihYm6q4Pbk+9XW8+3a2yY6oIqlX3Z7/HXfDmH7L01myPp5K/F1lPsZ554UP8J9QkMQiXZDKphCQAAAABJRU5ErkJggg==" alt="QR to programme" />
+      <small>Scan for programme & updates<br>https://www.mayur-dance.co.nz/utsav-2025</small>
+    </div>
+    
+  </div>
+
+  <div class="grid-2">
+    <div class="section">
+      <h2>Welcome</h2>
+      <ul>
+        <li>Puja and Aarti conducted by Suparna Basu.</li><li>Opening song by Swaratmika group & children, directed by Gayathri Dharma (Carnatic).</li><li>Please clap, cheer, and support our performers throughout the evening.</li>
+      </ul>
+      <div class="callout">Please clap, cheer and support our performers. Your applause gives them confidence on stage.</div>
+    </div>
+    <div class="section">
+      <h2>Venue</h2>
+      <div>Lower Hutt Little Theatre</div>
+      <div class="note">2 Queens Drive, Hutt Central, Lower Hutt 5010</div>
+      <h2 style="margin-top:12px;">Connect</h2>
+      <div><a href="https://www.mayur-dance.co.nz" target="_blank">https://www.mayur-dance.co.nz</a></div>
+    </div>
+  </div>
+
+  <hr class="split" />
+
+  <div class="section">
+    <h2>Programme</h2>
+    <div class="section">
+<h3>Opening</h3>
+<div class="list">
+
+            <div class="item">
+              <div class="t">Puja & Aarti</div>
+              <div class="meta">By: Suparna Basu</div>
+              <div class="type">Ritual & Song (Carnatic by Swaratmika Group)</div>
+            </div>
+            
+
+            <div class="item">
+              <div class="t">Ganesh Stuti</div>
+              <div class="meta">By: Paloma Sen</div>
+              <div class="type">Kathak</div>
+            </div>
+            
+</div></div>
+<div class="section">
+<h3>Baishakh</h3>
+<div class="list">
+
+            <div class="item">
+              <div class="t">Bengali Poila Boishakh Dance</div>
+              <div class="meta">By: Ruheli & Purba</div>
+              <div class="type">Folk</div>
+            </div>
+            
+
+            <div class="item">
+              <div class="t">Dasavatar</div>
+              <div class="meta">By: Samiksha, Prithvi & Bhusha</div>
+              <div class="type">Classical</div>
+            </div>
+            
+</div></div>
+<div class="section">
+<h3>Jyeshtha</h3>
+<div class="list">
+
+            <div class="item">
+              <div class="t">Shiva – Maheshwari Community Presentation</div>
+              <div class="meta">By: Wellington City Kathak Group — Asha, Hannah, Asha, Prerna & Angel</div>
+              <div class="type">Devotional</div>
+            </div>
+            
+
+            <div class="item">
+              <div class="t">Vat Savitri</div>
+              <div class="meta">By: Johnsonville Kids & Learners Group; Bharatanatyam Kids — Mishika, Dhanika, Tia & Kavisha</div>
+              <div class="type">Narrative</div>
+            </div>
+            
+</div></div>
+<div class="section">
+<h3>Ashaarh</h3>
+<div class="list">
+
+            <div class="item">
+              <div class="t">Jagannath Ratha Yatra</div>
+              <div class="meta">By: Aparat Bharatanatyam Group — Gokila, Sharanne, Aniyaktha</div>
+              <div class="type">Festival</div>
+            </div>
+            
+
+            <div class="item">
+              <div class="t">Guru Purnima Dance</div>
+              <div class="meta">By: Johnsonville Kids Group & Bharatanatyam Kids Group</div>
+              <div class="type">Tribute to Gurus</div>
+            </div>
+            
+
+            <div class="item">
+              <div class="t">Jagannath Ratha Yatra (Kathak)</div>
+              <div class="meta">By: Wellington City Kathak Group — Shiva, Harsha, Prerna & Anjali</div>
+              <div class="type">Kathak</div>
+            </div>
+            
+</div></div>
+<div class="section">
+<h3>Sawan</h3>
+<div class="list">
+
+            <div class="item">
+              <div class="t">Teej</div>
+              <div class="meta">By: Petone Kathak Group — Madhumita, Ankita & Monika</div>
+              <div class="type">Festival</div>
+            </div>
+            
+</div></div>
+<div class="section">
+<h3>Bhadra</h3>
+<div class="list">
+
+            <div class="item">
+              <div class="t">Ganapati Vandana</div>
+              <div class="meta">By: Johnsonville Bharatanatyam Learners — Mishika, Dhanika, Kavisha, Tia, Sujana, Bhavishya, Varuni & Neha</div>
+              <div class="type">Invocation</div>
+            </div>
+            
+
+            <div class="item">
+              <div class="t">Krishna Leela</div>
+              <div class="meta">By: Uma, Krishna & Kirti (Petone Bharatanatyam Group)</div>
+              <div class="type">Dance Drama</div>
+            </div>
+            
+
+            <div class="item">
+              <div class="t">Onam Celebration</div>
+              <div class="meta">By: Ensemble of 12 (TBC)</div>
+              <div class="type">Festival</div>
+            </div>
+            
+</div></div>
+<div class="section">
+<h3>Ashwin</h3>
+<div class="list">
+
+            <div class="item">
+              <div class="t">Devi Vandana – Navaratri Special</div>
+              <div class="meta">By: Returning Kathak Group — Akanksha, Monika, Madhumita, Krisha, Krishna, Kirti & Shanaya</div>
+              <div class="type">Invocation</div>
+            </div>
+            
+
+            <div class="item">
+              <div class="t">Goddess Lakshmi Dance</div>
+              <div class="meta">By: Bharatanatyam Johnsonville — Samiksha, Shivi, Ruheli & Bhusha</div>
+              <div class="type">Devotional</div>
+            </div>
+            
+
+            <div class="item">
+              <div class="t">Krishna Leela (Children’s Presentation)</div>
+              <div class="meta">By: Upper Hutt Little Kids Group</div>
+              <div class="type">Children</div>
+            </div>
+            
+</div></div>
+<div class="section">
+<h3>Kartik</h3>
+<div class="list">
+
+            <div class="item">
+              <div class="t">Kali – The Fierce Mother</div>
+              <div class="meta">By: Samiksha, Shivi, Ruheli, Vrusha, Tanvi, Shreya & Neha</div>
+              <div class="type">Devotional</div>
+            </div>
+            
+
+            <div class="item">
+              <div class="t">Lakshmi – Light and Prosperity</div>
+              <div class="meta">By: (Group TBC)</div>
+              <div class="type">Devotional</div>
+            </div>
+            
+
+            <div class="item">
+              <div class="t">Madhurashtakam</div>
+              <div class="meta">By: Ridhvi, Hanna & Asha</div>
+              <div class="type">Bhakti</div>
+            </div>
+            
+
+            <div class="item">
+              <div class="t">Karva Chauth</div>
+              <div class="meta">By: Tripti, Charu, Anitaji & Anita</div>
+              <div class="type">Festival</div>
+            </div>
+            
+</div></div>
+<div class="section">
+<h3>Magh</h3>
+<div class="list">
+
+            <div class="item">
+              <div class="t">Saraswati Vandana</div>
+              <div class="meta">By: Shiva, Bhrithi, Dhrithi, Neenu & Raksha</div>
+              <div class="type">Invocation</div>
+            </div>
+            
+</div></div>
+<div class="section">
+<h3>Phalgun</h3>
+<div class="list">
+
+            <div class="item">
+              <div class="t">Shiva Shriva Shruti</div>
+              <div class="meta">By: Tripti, Charu, Anitaji, Anita, Pakhi, Ishi, Myra, Siddhi, Subhadra & Sita</div>
+              <div class="type">Devotional</div>
+            </div>
+            
+</div></div>
+<div class="section">
+<h3>Chaitra</h3>
+<div class="list">
+
+            <div class="item">
+              <div class="t">Ram Navami</div>
+              <div class="meta">By: Medin, Uma & Zara</div>
+              <div class="type">Devotional</div>
+            </div>
+            
+
+            <div class="item">
+              <div class="t">Gudi Padwa (Gudi Parva)</div>
+              <div class="meta">By: Neha, Shreya & Tanvi</div>
+              <div class="type">Folk</div>
+            </div>
+            
+
+            <div class="item">
+              <div class="t">Ugadi</div>
+              <div class="meta">By: Pakhi, Ishi, Myra, Siddhi, Subhadra & Sita</div>
+              <div class="type">Festival</div>
+            </div>
+            
+
+            <div class="item">
+              <div class="t">Hanuman Chalisa</div>
+              <div class="meta">By: Medin, Uma, Zara, Raksha, Shiva, Neenu, Ridhvi & Dhriti</div>
+              <div class="type">Devotional</div>
+            </div>
+            
+
+            <div class="item">
+              <div class="t">Holi – Grand Finale</div>
+              <div class="meta">By: Entire Mayur Dance Academy Ensemble</div>
+              <div class="type">Grand Finale</div>
+            </div>
+            
+</div></div>
+  </div>
+
+  <div class="section">
+    <h2>Thanks to our Sponsors</h2>
+    <div class="sponsors">
+      <span class="sponsor">High Commission of India</span><span class="sponsor">Higher Taste</span><span class="sponsor">Chachi – Newtown</span><span class="sponsor">Jalaram Family Trust</span><span class="sponsor">Windy City</span><span class="sponsor">Anita’s Beauty</span>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div>© 2025 Mayur Dance Academy</div>
+    <div style="text-align:right;">Design: Simple A4 brochure · Print friendly</div>
+  </div>
+</body>
+</html>
